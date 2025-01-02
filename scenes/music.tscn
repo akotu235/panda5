@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0t1arog6ox0g"]
+
+[ext_resource type="AudioStream" uid="uid://icgf48645l7u" path="res://sounds/alexshadous-secret-mission-121611.mp3" id="1_75ust"]
+[ext_resource type="AudioStream" uid="uid://2upvd8r335t3" path="res://sounds/game-over-arcade-6435.mp3" id="2_vkipu"]
+[ext_resource type="Script" path="res://scripts/music.gd" id="2_wgotk"]
+
+[node name="Music" type="AudioStreamPlayer"]
+stream = ExtResource("1_75ust")
+autoplay = true
+bus = &"Music"
+parameters/looping = true
+script = ExtResource("2_wgotk")
+
+[node name="DeadSfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_vkipu")
+bus = &"SFX"

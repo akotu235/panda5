@@ -1,0 +1,89 @@
+[gd_scene load_steps=13 format=3 uid="uid://yrlpnwgm5mwj"]
+
+[ext_resource type="Texture2D" uid="uid://6ona5y2vqbht" path="res://assets/Items/Checkpoints/End/End (Pressed) (64x64).png" id="1_fdakv"]
+[ext_resource type="Script" path="res://scripts/end.gd" id="1_mn4sx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kjxkj"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_me7xc"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hin18"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a54ye"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lk0he"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c7maa"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ki6u6"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l0fqv"]
+atlas = ExtResource("1_fdakv")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wpsco"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kjxkj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_me7xc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hin18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a54ye")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lk0he")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c7maa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ki6u6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l0fqv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aj7d"]
+size = Vector2(32, 32)
+
+[node name="End" type="Node2D"]
+script = ExtResource("1_mn4sx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -32)
+sprite_frames = SubResource("SpriteFrames_wpsco")
+autoplay = "default"
+frame_progress = 0.903036
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -24)
+shape = SubResource("RectangleShape2D_5aj7d")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

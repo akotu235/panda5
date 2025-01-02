@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://b3sgxsun6xlem"]
+
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_qco73"]
+[ext_resource type="PackedScene" uid="uid://onnbb4o8wd2w" path="res://scenes/killzone.tscn" id="2_a8bvc"]
+[ext_resource type="Texture2D" uid="uid://bwrh212ndm565" path="res://assets/Enemies/Rino/Run (52x34).png" id="2_g3ey5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccf7c"]
+atlas = ExtResource("2_g3ey5")
+region = Rect2(0, 0, 52, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vf7y4"]
+atlas = ExtResource("2_g3ey5")
+region = Rect2(52, 0, 52, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pu0sw"]
+atlas = ExtResource("2_g3ey5")
+region = Rect2(104, 0, 52, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs21h"]
+atlas = ExtResource("2_g3ey5")
+region = Rect2(156, 0, 52, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6jit"]
+atlas = ExtResource("2_g3ey5")
+region = Rect2(208, 0, 52, 34)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsh83"]
+atlas = ExtResource("2_g3ey5")
+region = Rect2(260, 0, 52, 34)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_o2cqr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccf7c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vf7y4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pu0sw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs21h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6jit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsh83")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_olwue"]
+size = Vector2(40, 24)
+
+[node name="Enemy" type="Node2D"]
+script = ExtResource("1_qco73")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+sprite_frames = SubResource("SpriteFrames_o2cqr")
+autoplay = "default"
+frame = 5
+frame_progress = 0.171345
+
+[node name="Killzone" parent="." instance=ExtResource("2_a8bvc")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(-4, -12)
+shape = SubResource("RectangleShape2D_olwue")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, -8)
+target_position = Vector2(34, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, -8)
+target_position = Vector2(-34, 0)
