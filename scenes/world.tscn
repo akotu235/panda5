@@ -1277,3 +1277,56 @@ position = Vector2(-1912, 192)
 
 [node name="Start" parent="." instance=ExtResource("8_xbhv0")]
 position = Vector2(-528, 0)
+
+[node name="Background" type="Node2D" parent="."]
+position = Vector2(-784, -592)
+
+[node name="ColorRect" type="ColorRect" parent="Background"]
+z_index = -1
+z_as_relative = false
+offset_right = 1584.0
+offset_bottom = 800.0
+color = Color(0.301961, 0.301961, 0.301961, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Background"]
+z_index = -1
+z_as_relative = false
+offset_left = 336.0
+offset_top = -352.0
+offset_right = 1224.0
+color = Color(0.141176, 0.141176, 0.141176, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Background"]
+z_index = -1
+z_as_relative = false
+offset_left = 1224.0
+offset_top = -256.0
+offset_right = 1328.0
+offset_bottom = -160.0
+color = Color(0.141176, 0.141176, 0.141176, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Background"]
+z_index = -1
+z_as_relative = false
+offset_left = 224.0
+offset_top = -240.0
+offset_right = 336.0
+color = Color(0.141176, 0.141176, 0.141176, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Background"]
+z_index = -1
+z_as_relative = false
+offset_left = -848.0
+offset_top = 784.0
+offset_right = 144.0
+offset_bottom = 1088.0
+color = Color(0.579561, 0.379598, 0.217204, 1)
+
+[node name="ColorRect6" type="ColorRect" parent="Background"]
+z_index = -10
+z_as_relative = false
+offset_left = -2168.0
+offset_top = -1208.0
+offset_right = 2832.0
+offset_bottom = 2064.0
+color = Color(0, 0.580392, 0.937255, 1)
