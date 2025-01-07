@@ -30,12 +30,13 @@ Możesz uruchomić grę na dwa sposoby:
 
 ---
 
-## 📦 Assety  
-W grze wykorzystano assety pochodzące z:  
-- [Pixel Adventure 1](https://pixelfrog-assets.itch.io/pixel-adventure-1)  
-- [Pixel Adventure 2](https://pixelfrog-assets.itch.io/pixel-adventure-2)  
-- [Petey Panda](https://duckhive.itch.io/petey-panda)  
-- [Pixabay](https://pixabay.com)  
+## 📦 Assety
+W grze wykorzystano assety pochodzące z:
+- [Pixel Adventure 1](https://pixelfrog-assets.itch.io/pixel-adventure-1)
+- [Pixel Adventure 2](https://pixelfrog-assets.itch.io/pixel-adventure-2)
+- [Petey Panda](https://duckhive.itch.io/petey-panda)
+- [Crime Scene Alexshadous - Secret Mission](https://pixabay.com/music/crime-scene-alexshadous-secret-mission-121611/)
+- [Game Over Arcade Sound Effect](https://pixabay.com/sound-effects/game-over-arcade-6435/)
 
 ---
 
