@@ -1,7 +1,7 @@
 # Koncepcja gry
 
 ## **Tytuł gry:**
-**PanDa5**
+[**PanDa5**](https://github.com/akotu235/panda5)
 
 ## **Opis gry:**  
 PanDa5 to dynamiczna platformówka, w której gracz wciela się w pandę, pokonując pułapki i ruchome przeszkody, by dotrzeć do celu w jak najkrótszym czasie. Gra nagradza refleks i precyzję, umożliwiając bicie rekordów czasowych.  
@@ -25,7 +25,7 @@ Gra *PanDa5* jest objęta licencją, której szczegóły można znaleźć pod ty
 Rozgrywka jednoosobowa z tabelą rekordów. Gracze mogą rywalizować ze sobą poprzez porównywanie czasów.  
 
 ## **Ogólny opis rozgrywki:**  
-Gracz rozpoczyna poziom, pokonuje statyczne i ruchome przeszkody, unikając kolców i poruszających się nosorożców Rino. Platformy poruszają się w różnych kierunkach, wymagając precyzyjnego wyczucia czasu. W przypadku śmierci gra resetuje poziom, a licznik czasu zaczyna od nowa.  
+Gracz rozpoczyna poziom, pokonuje statyczne i ruchome przeszkody, unikając kolców i poruszających się nosorożców Rino. Platformy poruszają się w różnych kierunkach, wymagając precyzyjnego wyczucia czasu. W niektórych miejscach poziomu znajdują się ukryte przejścia, które prowadzą do alternatywnych ścieżek. W przypadku śmierci gra resetuje poziom, a licznik czasu zaczyna od nowa.  
 
 ## **Pomysły dotyczące poziomów:**
 1. **Poziom startowy** – podstawowe pułapki, uczące mechanik gry.
