@@ -15,7 +15,7 @@
 ## 🛠️ Jak uruchomić projekt  
 Możesz uruchomić grę na dwa sposoby:  
 
-* ### Opcja 1: Klonowanie repozytorium  
+### Opcja 1: Klonowanie repozytorium  
    ```bash
    git clone https://github.com/akotu235/panda5.git
    cd panda5
@@ -24,7 +24,7 @@ Możesz uruchomić grę na dwa sposoby:
    - Uruchom grę za pomocą przycisku „Run”.  
   
 
-* ### Opcja 2: Pobranie gotowego pliku  
+### Opcja 2: Pobranie gotowego pliku  
    Gra jest dostępna do pobrania w wersji działającej na `Windows` i `Linux`:  
    - [Pobierz z itch.io](https://akotu.itch.io/panda5)
 
